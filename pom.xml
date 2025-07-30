@@ -101,11 +101,11 @@
 	      <url>http://65.0.98.181:8081/codeavi1989@gmail.com/repository/axisbank-snapshot/</url>
 	    </repository>
 	    
-	    <SnapshotRepository>
+	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
 	      <url>http://65.0.98.181:8081/codeavi1989@gmail.com/repository/axisbank-releases/</url>
-	    </SnapshotRepository>
+	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
