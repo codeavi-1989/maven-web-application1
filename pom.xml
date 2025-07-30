@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://13.201.39.138:9980/</sonar.host.url>
+		<sonar.host.url>http://52.66.199.168:9980/</sonar.host.url>
 		
 		<sonar.token>squ_1db6087bee4cdd94361508678d3d9a8d53d089cb</sonar.token> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -116,12 +116,12 @@
 			<plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-war-plugin</artifactId>
-                            <version>3.3.2</version>
+                            <version>3.4.0</version>
                         </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.3</version>
+				<version>3.13.0</version>
 				<configuration>
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
