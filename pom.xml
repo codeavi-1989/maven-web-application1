@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>maven-web-application</artifactId>
+	<artifactId>maven-web-application1</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.2-SNAPSHOT</version>
 	
-	<name>maven-web-application</name>
+	<name>maven-web-application1</name>
 
 	<description>Maven Web Project for Java Project</description>
 
@@ -114,7 +114,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-application</finalName>
+		<finalName>maven-web-application1</finalName>
 		
 		<plugins>
 			<plugin>
@@ -139,7 +139,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/maven-web-application</contextPath>
+						<contextPath>/maven-web-application1</contextPath>
 					</webApp>
 				</configuration>
 			</plugin>
@@ -152,7 +152,7 @@
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
 					<wtpversion>2.0</wtpversion>
-					<wtpContextName>maven-web-application</wtpContextName>
+					<wtpContextName>maven-web-application1</wtpContextName>
 				</configuration>
 			</plugin>
 			
