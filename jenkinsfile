@@ -1,0 +1,32 @@
+node{
+    
+echo "the job name is :{env.JOB_NAME}"
+echo "the node name is :{env.NODE_NAME}"
+echo "the jenkin home dir is:{env.JENKINS_HOME}"
+def mavenHome= tool name: 'maven3.9.10'
+stage('CheckOutCode')
+{
+git credentialsId: '2b5676be-1d4e-4884-96dc-d0652cc470d2', url: 'https://github.com/codeavi-1989/maven-web-application1.git'
+}
+
+stage('Build')
+{
+sh "${mavenHome}/bin/mvn clean package"                         			 
+}
+/*
+stage('SonarQubeReport')
+{
+sh "${mavenHome}/bin/mvn clean sonar:sonar"                  			
+}
+stage('SonarQubeReport')
+{
+sh "${mavenHome}/bin/mvn clean deploy"                  		
+}
+stage('DeploymentIntoTomcatServer')
+{
+sshagent(['8db75fec-6036-4121-aafe-a966d5b5c3a7']) {
+    sh "scp  -o StrictHostKeyChecking=no target/maven-web-application.war1 ec2-user@172.31.33.40:8080/opt/apache-tomcat-11.0.8/webapps"
+}             			
+}
+*/
+}
